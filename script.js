@@ -50,3 +50,7 @@ function loadUpdates() {
         `;
     });
 }
+const password = prompt("Enter admin password:");
+if (password !== "admin123") {
+    document.querySelector(".admin-panel").style.display = "none";
+}
